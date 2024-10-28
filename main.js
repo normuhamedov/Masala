@@ -1,6 +1,6 @@
 // 1-masala
 // let promt = prompt("ixtiyoriy son kiriting");
-// alert(promt.toString().length);
+// alert(promt.length);
 
 
 // 2-masala
@@ -14,7 +14,7 @@
 
 // 3-masala
 // let promt = prompt("ixtiyoriy son kiriting");
-// let xonali = promt.toString().length
+// let xonali = promt.length;
 // if(promt % 2 == 0){
 //     alert(`Siz kiritgan son juft ekan va bu son ${xonali} xonali`)
 // }else {
@@ -22,21 +22,30 @@
 // }
 
 // 4-masala
-// let a = prompt("1.Ixtiyoriy bir xonali son kiriting")
-// let b = prompt("2.Ixtiyoriy bir xonali son kiriting")
-// let c = prompt("3.Ixtiyoriy bir xonali son kiriting")
-// if(a >= b && a >=c && b >= c) {
-//     alert("" + a + b + c);
-    
-// }else if(b >= a && b >=c && a >= c){
-//     alert("" + b + a + c);
-    
-// }else if(c >= a && c >=b && b >= a){
-//     alert("" + c + b + a);
-    
-// }else{
-//     alert("siz ko'p son kiritdinggiz");
-// }
+let a = prompt("1. Ixtiyoriy bir xonali son kiriting");
+let b = prompt("2. Ixtiyoriy bir xonali son kiriting");
+let c = prompt("3. Ixtiyoriy bir xonali son kiriting");
+
+if (a >= b && a >= c) {
+    if (b >= c) {
+        alert("" + a + b + c);
+    } else {
+        alert("" + a + c + b);
+    }
+} else if (b >= a && b >= c) {
+    if (a >= c) {
+        alert("" + b + a + c);
+    } else {
+        alert("" + b + c + a);
+    }
+} else {
+    if (a >= b) {
+    alert("" + c + a + b);
+} else {
+    alert("" + c + b + a);
+    }
+}
+
 
 // 5-masala
 // let promt = prompt("Uch xonali son kiriting");
